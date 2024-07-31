@@ -1,0 +1,66 @@
+/* =============== AUTOPLAY ================== */
+.player[autoplay][data-started] {
+  /** autoplay has successfully started. */
+}
+
+.player[data-autoplay-error]:not([data-started]) {
+  /** autoplay has failed - show fallback controls? */
+}
+
+/* ============== FULLSCREEN ================ */
+.player[data-can-fullscreen] {
+  /* fullscreen API is available. */
+}
+
+.player:not([data-can-fullscreen]) {
+  /* fullscreen API is _not_ available. */
+}
+
+.player[data-fullscreen] {
+  /* fullscreen is active. */
+}
+
+.player:not([data-fullscreen]) {
+  /* fullscreen is _not_ active. */
+}
+
+.player[data-can-pip] {
+  /* PIP API is available. */
+}
+
+/* ========= PICTURE IN PICTURE ========== */
+.player:not([data-can-pip]) {
+  /* PIP API is _not_ available. */
+}
+
+.player[data-pip] {
+  /* PIP is active. */
+}
+
+.player:not([data-pip]) {
+  /* PIP is _not_ active. */
+}
+
+/* ========= ORIENTATION ========== */
+.player[data-orientation="portrait"] {
+}
+
+.player[data-orientation="landscape"] {
+}
+
+/* ========= LIVE STREAMING ========== */
+/* stream is live. */
+.player[data-live] {
+}
+
+/* stream is at the live edge. */
+.player[data-live-edge] {
+}
+
+/* stream is at the live edge and playing. */
+.player[data-live-edge][data-playing] {
+}
+
+/* seeking is permitted for live DVR stream. */
+.player[data-live][data-can-seek] {
+}
